@@ -2,11 +2,16 @@
 <html lang="es">
 
 <head>
+<<<<<<< HEAD
     <title>Ejercicio Estructura repetitiva (for)</title>
+=======
+    <title>Ejercicio Estructura repetitiva (do/while)</title>
+>>>>>>> 86fb414fa3617671d8a5d4543faa838c9d883ca7
     <meta charset="UTF-8">
 </head>
 
 <body>
+<<<<<<< HEAD
     <script>
         let cantidadTriangulosMayor12 = 0;
         for (let f = 1; f <= 3; f++) {
@@ -23,6 +28,35 @@
         }
         document.write('Cantidad de triángulos con superficie mayor a 12:' + cantidadTriangulosMayor12);
     </script>
+=======
+
+    <script>
+        let nrocuenta;
+        let nombre;
+        let saldo = 0;
+        let saldoacre = 0;
+        do {
+            nrocuenta = parseInt(prompt('Ingrese el numero de cuenta:'));
+            if (nrocuenta >= 0) {
+                nombre = prompt('Nombre del cliente:');
+                saldo = parseFloat(prompt('Saldo actual:'));
+                if (saldo > 0) {
+                    saldoacre = saldoacre + saldo;
+                    document.write(nombre + ' tiene saldo acreedor<br>');
+                } else {
+                    if (saldo < 0) {
+                        document.write(nombre + ' tiene saldo deudor<br>');
+                    } else {
+                        document.write(nombre + ' tiene saldo nulo<br>');
+                    }
+                }
+
+            }
+        } while (nrocuenta > 0);
+        document.write('Suma total de saldos acreedores:' + saldoacre);
+    </script>
+
+>>>>>>> 86fb414fa3617671d8a5d4543faa838c9d883ca7
 </body>
 
 </html>
